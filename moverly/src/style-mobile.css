@@ -1,0 +1,511 @@
+:root{
+  --button-secondary-color: #165769;
+  --button-primary-color: #177F9B;
+}
+
+/* UI STUFF */
+
+#logo-icon-mobile{
+  position: absolute;
+  top:20vw;
+  width: 60vw;
+  left:0;
+}
+
+#ui-overlay-mobile{
+  position: absolute;
+  display: flex;
+  top:0;
+  right: 0vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  color:white;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 12vw;
+}
+
+#ui-toggle-button-mobile{
+  position: relative;
+  float:right;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  border: none;
+  background-color: transparent;
+  background-image: url(/assets/ui/menu-hamburguer.png);
+  cursor: pointer;
+  padding: 0;
+}
+
+#ui-toggle-button-div-mobile{
+  margin-top: 4vw;
+  width: 5vw;
+  height: 4vw;
+  display: block;
+  margin-right: 3vw;
+}
+
+.ui-menu-button-mobile{
+  font-family: kulim-park-light, Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 2vw;
+  font-size: 5vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1vw;
+  color:#177F9B;
+  border:none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+  width: 100%;
+}
+
+.ui-menu-button-mobile:active{
+  background-color: var(--button-primary-color);
+  color: white;
+}
+
+
+@font-face {
+  font-family: kulim-park;
+  src: url(/assets/ui/KulimPark-Regular.ttf);
+}
+
+@font-face {
+  font-family: kulim-park-light;
+  src: url(/assets/ui/KulimPark-Light.ttf);
+}
+
+@font-face {
+  font-family: mulish;
+  src: url(/assets/ui/Mulish-VariableFont_wght.ttf);
+}
+
+#buttons-div-mobile{
+  position: absolute;
+  background-color: rgba(255,255,255,0.8);
+  top:12vw;
+  left: 55vw;
+  width: 40vw;
+  height: 0vw;
+  transition: height 0.5s ease;
+  overflow-y: hidden;
+}
+
+
+#jojo-button-mobile{
+  margin-right: 1vw;
+  float:right;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  border: none;
+  background-color: transparent;
+  background-image: url(/assets/ui/jojo-icon.png);
+  cursor: pointer;
+  padding: 0;
+}
+
+#jojo-button-div-mobile{
+  display: block;
+  position: relative;
+  width: 6vw;
+  height: 5.5vw;
+  margin-top: 3.25vw;
+  margin-right: 5vw;
+}
+
+#sound-button-mobile{
+  margin-right: 1vw;
+  float:right;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  border: none;
+  background-color: transparent;
+  background-image: url(/assets/ui/sound-icon.png);
+  cursor: pointer;
+  padding: 0;
+  background-repeat: no-repeat;
+}
+
+#sound-button-div-mobile{
+  display: block;
+  position: relative;
+  width: 6vw;
+  height: 5vw;
+  margin-top: 3.5vw;
+  margin-right: 3vw;
+
+}
+
+
+
+
+
+
+#info-overlay-mobile{
+  position: absolute;
+  top:12vw;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: none;
+}
+
+p{
+  font-family: kulim-park-light;
+}
+
+h1{
+  font-family: kulim-park-light;
+}
+
+#info-title-mobile{
+  margin-top: 6vw;
+  width: 100%;
+  margin-left: 4vw;
+  font-weight: 800;
+  font-size: 5vw;
+  color:var(--button-primary-color);
+  font-family: Mulish,Arial, Helvetica, sans-serif;
+}
+
+#info-text-mobile{
+  margin-top: 0;
+  margin-left: 1vw;
+  line-height: 3.5vw;
+  font-size: 3vw;
+  text-align: justify;
+  padding-left: 3vw;
+  padding-right: 4vw;
+  font-family: Mulish, Arial, Helvetica, sans-serif;
+}
+
+#info-close-button-mobile{
+  margin-top: 4vw;
+  margin-left: 92vw;
+  width: 4vw;
+  height: 4vw;
+  background-image: url(/assets/ui/close-button.png);
+  background-color: transparent;
+  background-size: 100% 100%;
+  border:none;
+  cursor: pointer;
+}
+
+#info-back-button-mobile{
+  margin-top: 4vw;
+  margin-left: 4vw;
+  width: 4vw;
+  height: 4vw;
+  background-image: url(/assets/ui/back-button.png);
+  background-size: 100% 100%;
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+  position: absolute;
+  display: none;
+}
+
+#info-overlay-top-navbar-mobile{
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 8vw;
+}
+
+#info-image-mobile{
+  width: 100vw;
+}
+
+#info-navbar-mobile{
+  display: flex;
+  justify-content: center;
+  height: 20vw;
+}
+
+.info-navbar-button-div-mobile{
+  text-align: center;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  width: 15vw;
+  height: 20vw;
+}
+
+.info-navbar-button-mobile{
+  background-color: transparent;
+  background-size: 100% 100%;
+  border: none;
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer;
+}
+
+.info-navbar-description-mobile{
+  font-size: 4vw;
+  color: var(--button-primary-color);
+  cursor: pointer;
+}
+
+#info-navbar-history-button-mobile{
+  background-image: url(/assets/ui/history-icon.png);
+  background-size: 100% 100%;
+  
+}
+#info-navbar-lifestyle-button-mobile{
+  background-image: url(/assets/ui/lifestyle-icon.png);
+  background-size: 200% 170%;
+  background-position: -6vw -4vw;
+}
+#info-navbar-fauna-button-mobile{
+  background-image: url(/assets/ui/fauna-icon.png);
+  background-size: 140% 140%;
+  background-position: -0.5vw -0.5vw;
+}
+#info-navbar-flora-button-mobile{
+  background-image: url(/assets/ui/flora-icon.png);
+  background-size: 170% 170%;
+  background-position:-4vw -4vw;
+}
+
+
+#info-history-page-mobile{
+  display: none;
+}
+#info-lifestyle-page-mobile{
+  display: none;
+}
+#info-fauna-page-mobile{
+  display: none;
+}
+#info-flora-page-mobile{
+  display: none;
+}
+
+
+#info-history-body{
+  width: 60vw;
+  display: flex;
+}
+
+.info-page-image-mobile{
+  top:0;
+  width: 100vw;
+  margin-bottom: 2vw;
+  background-color:#ddd;
+}
+
+.info-page-description-mobile{
+  margin-top: 0;
+  margin-left: 1vw;
+  line-height: 3.5vw;
+  font-size: 3vw;
+  text-align: justify;
+  padding-left: 3vw;
+  padding-right: 4vw;
+  font-family: Mulish, Arial, Helvetica, sans-serif;
+}
+
+
+#routes-div-mobile{
+  height: 0;
+  overflow-y: hidden;
+  transition: height 0.5 ease;
+}
+
+.info-page-title-mobile{
+  margin-top: 6vw;
+  width: 100%;
+  margin-left: 4vw;
+  font-weight: 800;
+  font-size: 5vw;
+  color:var(--button-primary-color);
+  font-family: Mulish,Arial, Helvetica, sans-serif;
+}
+
+.routes-button-mobile{
+  font-family: kulim-park-light, Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  text-align: right;
+  font-size: 3vw;
+  height: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding:1vw;
+  padding-right: 1vw;
+  color:var(--button-primary-color);
+  border:none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.routes-button-mobile:active{
+  background-color: var(--button-secondary-color);
+  color: white;
+}
+
+
+#project-overlay-mobile{
+  position: absolute;
+  top:40vw;
+  left: 5vw;
+  width: 90vw;
+  height: 70vw;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 5vw;
+  display: none;
+}
+
+#project-title-mobile{
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  font-size:8vw;
+  color:var(--button-primary-color);
+  font-family: Mulish,Arial, Helvetica, sans-serif;
+}
+
+#project-text-mobile{
+  overflow-y: scroll;
+  margin-top: 0;
+  width: 80vw;
+  height: 35vw;
+  line-height: 4vw;
+  font-size: 3.5vw;
+  text-align: justify;
+  padding-left: 5vw;
+  padding-right: 3vw;
+  font-family: Mulish, Arial, Helvetica, sans-serif;
+}
+
+#project-close-button-mobile{
+  margin-top: 6vw;
+  margin-left: 82vw;
+  width: 4vw;
+  height: 4vw;
+  background-image: url(/assets/ui/close-button.png);
+  background-color: transparent;
+  background-size: 100% 100%;
+  border:none;
+  cursor: pointer;
+}
+
+
+#languages-button-mobile{
+  margin-left: auto;
+  font-size: 4vw;
+  margin-right: 5vw;
+  margin-top: 0;
+  height: 100%;
+  width: 15vw;
+}
+
+#routes-description-div-mobile{
+  position: absolute;
+  bottom: 5vw;
+  left: 5vw;
+  width: 40vw;
+  background-color: white;
+  border-radius: 3vw;
+  padding: 2vw;
+  font-family: kulim-park, Arial, Helvetica, sans-serif;
+  display: none;
+}
+
+.routes-description-title-mobile{
+  background-color: #D83D3D;
+  text-align: center;
+  padding: 2vw;
+  border-radius: 4vw;
+  font-size: 4vw;
+  margin-bottom: 1vw;
+}
+
+.routes-description-point-mobile{
+  margin-left: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+  font-size: 3.5vw;
+}
+
+
+
+#landing-page-mobile{
+  position: absolute;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255,0.8);
+}
+
+#landing-page-title-mobile{
+  margin-left: 5vw;
+  margin-top:60vw;
+  width: 90vw;
+  font-family: Rubik, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 9vw;
+  font-weight: 700;
+}
+
+#landing-page-description-mobile{
+  margin-left: 14vw;
+  margin-top:4vw;
+  width: 72vw;
+  font-family: Mullish, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 3vw;
+  line-height: 3.5vw;
+  font-weight: 300;
+}
+
+#landing-page-tip-mobile{
+  margin-left: 5vw;
+  margin-top:4vw;
+  width: 90vw;
+  font-family: mullish, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 3vw;
+  line-height: 2.5vw;
+  font-weight: 700;
+}
+
+#landing-page-button-mobile{
+  margin-left: 32.5vw;
+  margin-top:12vw;
+  width: 35vw;
+  font-family: Mullish, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 5vw;
+  background-color: #A8DCEA;
+  padding: 1vw;
+  border: 1px solid #000;
+  border-radius: 3vw;
+}
+
+#landing-page-button-mobile:active{
+  background-color: #9ad5e5;
+}
+
+#jojo-div-mobile{
+  width: 50vw;
+  height: 30vw;
+  position: fixed;
+  bottom:0;
+  z-index: 10;
+  overflow: hidden;
+}
+
+#jojo-video-mobile{
+  width: 200%;
+  margin-top: 10vw;
+  transition: margin-top 0.5s ease;
+}

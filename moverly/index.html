@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/moverly.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadeiraView - Moverly</title>
+    <link rel="stylesheet" type="text/css" href="./src/style.css" />
+    <link rel="stylesheet" type="text/css" href="./src/style-mobile.css" />
+    <script type="module" defer src="/src/main.ts"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/mobileUI.ts"></script>
+    <script type="module" src="src/languages.ts"></script>
+    <div id="scene"></div>
+
+    <!--WEB VERSION-->
+    <div id="web-version">
+      <!--"ILHA DA MADEIRA" text-->
+      <img id="logo-icon" src="/assets/ui/ilha-da-madeira-logo.png" class="no-highlight">
+      
+
+      <!--menus that appear when you click information-->
+      <div id="info-overlay">
+        <div>
+          <!--back and close buttons-->
+          <button id="info-back-button"></button>
+          <button id="info-close-button"></button>
+        </div>
+        <!--Information starting page-->
+        <div id="info-start-page">
+          <h1 id="info-title">Information</h1>
+          <p id="info-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <!--History page-->
+        <div id="info-history-page">
+          <h1 id="info-history-title" class="info-page-title">History</h1>
+          <div id="info-history-body">
+            <img class="info-page-image" id="history-img" src="/assets/ui/history-img.png"/>
+            <div class="info-page-description">
+              <p id="info-history-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Lifestyle page-->
+        <div id="info-lifestyle-page">
+          <h1 id="info-lifestyle-title" class="info-page-title">Lifestyle</h1>
+          <div id="info-history-body">
+            <img class="info-page-image" id="lifestyle-img" src="/assets/ui/lifestyle-img.png"/>
+            <div class="info-page-description">
+              <p id="info-lifestyle-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Fauna page-->
+        <div id="info-fauna-page">
+          <h1 id="info-fauna-title" class="info-page-title">Fauna</h1>
+          <div id="info-history-body">
+            <img class="info-page-image" id="fauna-img" src="/assets/ui/fauna-img.png"/>
+            <div class="info-page-description">
+              <p id="info-fauna-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Flora page-->
+        <div id="info-flora-page">
+          <h1 id="info-flora-title" class="info-page-title">Flora</h1>
+          <div id="info-history-body">
+            <img class="info-page-image" id="flora-img" src="/assets/ui/flora-img.png"/>
+            <div class="info-page-description">
+              <p id="info-flora-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Information page bottom navbar-->
+        <div id="info-navbar">
+          <div class="info-navbar-button-div">
+            <button
+              class="info-navbar-button"
+              id="info-navbar-history-button"
+            ></button>
+            <p class="info-navbar-description" id="info-navbar-history">
+              History
+            </p>
+          </div>
+          <div class="info-navbar-button-div">
+            <button
+              class="info-navbar-button"
+              id="info-navbar-lifestyle-button"
+            ></button>
+            <p class="info-navbar-description" id="info-navbar-lifestyle">
+              Lifestyle
+            </p>
+          </div>
+          <div class="info-navbar-button-div">
+            <button
+              class="info-navbar-button"
+              id="info-navbar-fauna-button"
+            ></button>
+            <p class="info-navbar-description" id="info-navbar-fauna">Fauna</p>
+          </div>
+          <div class="info-navbar-button-div">
+            <button
+              class="info-navbar-button"
+              id="info-navbar-flora-button"
+            ></button>
+            <p class="info-navbar-description" id="info-navbar-flora">Flora</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Project page-->
+      <div id="project-overlay">
+        <button id="project-close-button"></button>
+        <h1 id="project-title">Sobre</h1>
+        <p id="project-text">
+          Bem-vindo ao mapa interativo da Ilha da Madeira!<br />Explore e
+          descubra os encantos deste paraíso natural através da nossa ferramenta
+          interativa, projetada para proporcionar uma experiência única aos
+          visitantes e moradores locais.<br />Com o nosso mapa, poderá navegar
+          facilmente pela ilha, explorar pontos de interesse, trilhas
+          deslumbrantes, praias paradisíacas e locais históricos.
+        </p>
+      </div>
+
+      <!--Side menu-->
+      <div id="ui-overlay">
+        <div id="ui-toggle-button-div">
+          <button id="ui-toggle-button"></button>
+        </div>
+        <div id="buttons-div">
+          <button id="info-button" class="ui-menu-button">Information</button>
+          <button id="routes-button" class="ui-menu-button">Routes</button>
+          <div id="routes-div"></div>
+          <button id="project-button" class="ui-menu-button">Project</button>
+          <button id="accessibility-button" class="ui-menu-button">
+            Accessibility
+          </button>
+          <button id="languages-button" class="ui-menu-button">
+            <b>PT</b>&nbsp;|&nbsp;EN
+          </button>
+        </div>
+        <div id="jojo-button-div">
+          <button id="jojo-button"></button>
+        </div>
+        <div id="sound-button-div">
+          <button id="sound-button"></button>
+        </div>
+      </div>
+
+      <!--Routes description-->
+      <div id="routes-description-div">
+        <div class="routes-description-title" id="routes-description-title">
+          Zona Este
+        </div>
+      </div>
+
+      <!--Jojo-->
+      <div id="jojo-div">
+        <video src="/assets/ui/jojo.gif" autoplay id="jojo-video"></video>
+      </div>
+
+      <!--Landing page-->
+      <div id="landing-page">
+        <div id="landing-page-title">Mapa Interativo da Ilha da Madeira</div>
+        <div id="landing-page-description">
+          A experiência a seguir visa apresentar os encantos da Madeira de uma
+          forma interativa e divertida
+        </div>
+        <div id="landing-page-tip">
+          PRESERVAR O SOM PARA UMA MELHOR EXPERIÊNCIA
+        </div>
+        <button id="landing-page-button">Começar</button>
+      </div>
+    </div>
+
+    <!--MOBILE VERSION-->
+    <div id="mobile-version">
+      <!--"ILHA DA MADEIRA" text-->
+      <img id="logo-icon-mobile" src="/assets/ui/ilha-da-madeira-logo.png">
+      
+
+      <!--menus that appear when you click information-->
+      <div id="info-overlay-mobile">
+        <div id="info-overlay-top-navbar-mobile">
+          <!--back and close buttons-->
+          <button id="info-back-button-mobile"></button>
+          <button id="info-close-button-mobile"></button>
+        </div>
+        <!--Information starting page-->
+        <div id="info-start-page-mobile">
+          <img id="info-image-mobile" alt="Information" src="/assets/ui/info-image.jpg"/>
+          <h1 id="info-title-mobile">Information</h1>
+          <p id="info-text-mobile">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <!--History page-->
+        <div id="info-history-page-mobile">
+          <div id="info-history-body-mobile">
+            <img class="info-page-image-mobile" id="history-img" src="/assets/ui/history-img-mobile.png"/>
+            <h1 id="info-history-title-mobile" class="info-page-title-mobile">History</h1>
+            <div class="info-page-description-mobile">
+              <p id="info-history-text-mobile">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Lifestyle page-->
+        <div id="info-lifestyle-page-mobile">
+          <div id="info-history-body-mobile">
+            <img class="info-page-image-mobile" id="lifestyle-img" src="/assets/ui/lifestyle-img-mobile.png"/>
+            <h1 id="info-lifestyle-title-mobile" class="info-page-title-mobile">Lifestyle</h1>
+            <div class="info-page-description-mobile">
+              <p id="info-lifestyle-text-mobile">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Fauna page-->
+        <div id="info-fauna-page-mobile">
+          <div id="info-history-body-mobile">
+            <img class="info-page-image-mobile" id="fauna-img" src="/assets/ui/fauna-img-mobile.png"/>
+            <h1 id="info-fauna-title-mobile" class="info-page-title-mobile">Fauna</h1>
+            <div class="info-page-description-mobile">
+              <p id="info-fauna-text-mobile">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Flora page-->
+        <div id="info-flora-page-mobile">
+          <div id="info-history-body-mobile">
+            <img class="info-page-image-mobile" id="flora-img" src="/assets/ui/flora-img-mobile.png"/>
+            <h1 id="info-flora-title-mobile" class="info-page-title-mobile">Flora</h1>
+            <div class="info-page-description-mobile">
+              <p id="info-flora-text-mobile">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Information page bottom navbar-->
+        <div id="info-navbar-mobile">
+          <div class="info-navbar-button-div-mobile">
+            <button
+              class="info-navbar-button-mobile"
+              id="info-navbar-history-button-mobile"
+            ></button>
+            <p
+              class="info-navbar-description-mobile"
+              id="info-navbar-history-mobile"
+            >
+              History
+            </p>
+          </div>
+          <div class="info-navbar-button-div-mobile">
+            <button
+              class="info-navbar-button-mobile"
+              id="info-navbar-lifestyle-button-mobile"
+            ></button>
+            <p
+              class="info-navbar-description-mobile"
+              id="info-navbar-lifestyle-mobile"
+            >
+              Lifestyle
+            </p>
+          </div>
+          <div class="info-navbar-button-div-mobile">
+            <button
+              class="info-navbar-button-mobile"
+              id="info-navbar-fauna-button-mobile"
+            ></button>
+            <p
+              class="info-navbar-description-mobile"
+              id="info-navbar-fauna-mobile"
+            >
+              Fauna
+            </p>
+          </div>
+          <div class="info-navbar-button-div-mobile">
+            <button
+              class="info-navbar-button-mobile"
+              id="info-navbar-flora-button-mobile"
+            ></button>
+            <p
+              class="info-navbar-description-mobile"
+              id="info-navbar-flora-mobile"
+            >
+              Flora
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--Project page-->
+      <div id="project-overlay-mobile">
+        <button id="project-close-button-mobile"></button>
+        <h1 id="project-title-mobile">Sobre</h1>
+        <p id="project-text-mobile">
+          Bem-vindo ao mapa interativo da Ilha da Madeira!<br />Explore e
+          descubra os encantos deste paraíso natural através da nossa ferramenta
+          interativa, projetada para proporcionar uma experiência única aos
+          visitantes e moradores locais.<br />Com o nosso mapa, poderá navegar
+          facilmente pela ilha, explorar pontos de interesse, trilhas
+          deslumbrantes, praias paradisíacas e locais históricos.
+        </p>
+      </div>
+
+      <!--Routes description-->
+      <div id="routes-description-div-mobile">
+        <div
+          class="routes-description-title-mobile"
+          id="routes-description-title-mobile"
+        >
+          Zona Este
+        </div>
+      </div>
+
+      <!--Top menu-->
+      <div id="ui-overlay-mobile">
+        <button id="languages-button-mobile" class="ui-menu-button-mobile">
+          <b>PT</b>&nbsp;|&nbsp;EN
+        </button>
+        <div id="jojo-button-div-mobile">
+          <button id="jojo-button-mobile"></button>
+        </div>
+        <div id="sound-button-div-mobile">
+          <button id="sound-button-mobile"></button>
+        </div>
+        <div id="ui-toggle-button-div-mobile">
+          <button id="ui-toggle-button-mobile"></button>
+        </div>
+      </div>
+      <!--Buttons dropdown-->
+      <div id="buttons-div-mobile">
+        <button id="info-button-mobile" class="ui-menu-button-mobile">
+          Information
+        </button>
+        <button id="routes-button-mobile" class="ui-menu-button-mobile">
+          Routes
+        </button>
+        <div id="routes-div-mobile"></div>
+        <button id="project-button-mobile" class="ui-menu-button-mobile">
+          Project
+        </button>
+        <button id="accessibility-button-mobile" class="ui-menu-button-mobile">
+          Accessibility
+        </button>
+      </div>
+
+
+      <!--Jojo-->
+      <div id="jojo-div-mobile">
+        <video src="/assets/ui/jojo.gif" autoplay id="jojo-video-mobile"></video>
+      </div>
+
+      <!--Landing page-->
+      <div id="landing-page-mobile">
+        <div id="landing-page-title-mobile">
+          Mapa Interativo da Ilha da Madeira
+        </div>
+        <div id="landing-page-description-mobile">
+          A experiência a seguir visa apresentar os encantos da Madeira de uma
+          forma interativa e divertida
+        </div>
+        <div id="landing-page-tip-mobile">
+          PRESERVAR O SOM PARA UMA MELHOR EXPERIÊNCIA
+        </div>
+        <button id="landing-page-button-mobile">Começar</button>
+      </div>
+    </div>
+  </body>
+</html>

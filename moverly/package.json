@@ -1,0 +1,26 @@
+{
+  "name": "madeiraview",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest --config jest.config.js"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "ts-jest": "^29.0.5",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "@types/three": "^0.149.0",
+    "gsap": "^3.11.5",
+    "three": "^0.149.0"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  }
+}
